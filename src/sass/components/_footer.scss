@@ -1,0 +1,44 @@
+footer {
+  background-color: $light-grey;
+}
+
+.footer {
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media screen and(min-width:768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__text {
+    @media screen and(min-width:320px) and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 1.17;
+      justify-content: center;
+    }
+    display: flex;
+    text-align: center;
+    color: $footer-text;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5px;
+  }
+  &__heart {
+    display: flex;
+    color: $accent8;
+    margin: 0 5px;
+  }
+}
+.team {
+  @media screen and(min-width:320px) {
+    font-size: 14px;
+  }
+  margin-left: 5px;
+  color: $footer-text;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+}

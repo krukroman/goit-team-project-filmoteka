@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: transparent;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+label,
+input,
+textarea {
+  display: block;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

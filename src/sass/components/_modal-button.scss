@@ -1,0 +1,23 @@
+.modal-button {
+  width: 130px;
+  height: 44px;
+  border-radius: 5px;
+  border: $white-color 1px solid;
+  background-color: transparent;
+  outline: none;
+  //   display: inline-block;
+  text-transform: uppercase;
+  color: $white-color;
+  @media screen and (min-width: 768px) {
+    width: 136px;
+  }
+}
+.modal-button:focus,
+.modal-button:hover {
+  background-color: $accent1;
+  border-color: $accent1;
+}
+.modal-button--active {
+  background-color: $accent1;
+  border-color: $accent1;
+}

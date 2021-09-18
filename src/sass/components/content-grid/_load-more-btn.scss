@@ -1,0 +1,8 @@
+.js-load-more {
+  margin-top: 20px;
+  margin-inline: auto;
+
+  &.is-hidden {
+    display: none;
+  }
+}

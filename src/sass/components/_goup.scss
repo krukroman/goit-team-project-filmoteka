@@ -1,0 +1,32 @@
+.goup__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $accent8;
+  border: 1px solid $accent8;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  opacity: 0.7;
+  transition: opacity 200ms ease;
+
+  @media screen and (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.goup {
+  fill: $white-color;
+}

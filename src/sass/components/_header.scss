@@ -1,0 +1,208 @@
+.page-header {
+  background-color: $black-color;
+}
+.header {
+  &__container {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: $black-color;
+    background-image: linear-gradient(to left, $gradient, $gradient),
+      url('/images/header/bg-small.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to left, $gradient, $gradient),
+        url('/images/header/bg-medium.jpg');
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(to left, $gradient, $gradient),
+        url('/images/header/bg-big.jpg');
+    }
+  }
+  &__nav-wrapper {
+    display: flex;
+    margin-top: 46px;
+    align-items: flex-end;
+    height: 24px;
+  }
+  &__nav {
+    display: flex;
+  }
+}
+.logo__link {
+  display: flex;
+  align-items: stretch;
+  outline-color: $accent8;
+}
+
+.title-link {
+  line-height: 0.8;
+  margin-left: 10px;
+  display: none;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    display: block;
+    color: $white-color;
+    font-size: 30px;
+
+    align-self: center;
+  }
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: transform 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes transform {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.header__nav-wrapper {
+  display: flex;
+
+  outline: none;
+}
+.header__nav {
+  margin-left: auto;
+}
+.header__nav-item {
+  position: relative;
+}
+.header__nav-item:first-child {
+  margin-right: 40px;
+}
+
+.header__nav-link {
+  font-weight: 500;
+  line-height: 1.2;
+  color: $white-color;
+  text-transform: uppercase;
+  outline-color: $accent8;
+}
+
+.header__nav-link--active::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: $accent8;
+}
+@keyframes changeColor {
+  0% {
+    color: $white-color;
+  }
+
+  50% {
+    color: $accent8;
+  }
+
+  100% {
+    color: $white-color;
+  }
+}
+.header__nav-link:hover,
+// .title-link:hover,
+.header__nav-link:focus,
+.title-link:focus {
+  animation-name: changeColor;
+  animation-duration: 1300ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  outline-color: $accent8;
+}
+
+.header__form {
+  position: relative;
+  width: 100%;
+  max-width: 336px;
+  height: 20px;
+  border-bottom: solid 1px $white-color;
+  align-self: center;
+  margin-top: 40px;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    max-width: 436px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+.header__input-icon::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 5px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+
+  background-image: url('/images/header/search2.svg');
+  background-repeat: no-repeat;
+}
+
+.header__input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  color: $white-color;
+}
+
+.header__warning {
+  margin-top: 22px;
+  align-self: center;
+  color: $warning;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.header__filter-button-wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+}
+.header__button--right {
+  margin-right: 20px;
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+  }
+}
+
+.lib-container {
+  background-image: linear-gradient(to left, $gradient, $gradient),
+    url('../images/header/lib-bg-small.jpg');
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to left, $gradient, $gradient),
+      url('../images/header/lib-bg-medium.jpg');
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(to left, $gradient, $gradient),
+      url('../images/header/lib-bg-big.jpg');
+  }
+}
+.header__thats-all-msg {
+  margin-top: 22px;
+  align-self: center;
+  color: $accent8;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.empty-list {
+  text-align: center;
+}

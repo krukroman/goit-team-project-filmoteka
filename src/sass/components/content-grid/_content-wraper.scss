@@ -1,0 +1,15 @@
+.content-wraper {
+  margin-inline: auto;
+  max-width: 1024px;
+
+  padding-inline: 71px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 320px;
+    padding-inline: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 768px;
+    padding-inline: 75px;
+  }
+}

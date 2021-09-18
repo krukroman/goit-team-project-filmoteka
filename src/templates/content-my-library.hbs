@@ -1,0 +1,25 @@
+{{#each this}}
+  <li class='content__card'>
+    <a href='#!' data-id='{{id}}' class='content__link'>
+      <div class='poster__wraper'>
+        <img
+          src='https://image.tmdb.org/t/p/w300{{poster_path}}'
+          alt='poster for {{title}}'
+          class='content__poster'
+        />
+      </div>
+      <div class='card__description'>
+        <p class='content__title'>{{title}}</p>
+        <p class='content__info'>
+
+          <span class='content__genres'>
+            {{#each genres}}{{this.id}},{{/each}}
+          </span>
+
+          |
+          <span class='content__year'>{{release_date}}</span>
+          <span class='content__rating'>{{vote_average}}</span></p>
+      </div>
+    </a>
+  </li>
+{{/each}}
